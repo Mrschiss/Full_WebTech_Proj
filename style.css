@@ -10,6 +10,15 @@ header {
   text-align: center;
 }
 
+button {
+  background-color: #81234b; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  padding: 10px 16px; 
+  margin-right: 10px;
+}
+
 nav ul {
 	list-style: none;
 	margin: 0;
