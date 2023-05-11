@@ -2,12 +2,24 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-header {
-  background-color: #f2f2f2;
+header { 
+  background:#81234b;
   padding: 10px;
-  text-align: center;
+  grid-column: col-start / col-end; 
+  grid-row: line-h-1 / line-h-2; 
+}
+
+header a {
+  justify-self: end;
+}
+
+footer { 
+  background:#81234b;
+  grid-column: col-start / col-end; 
+  grid-row: line-h-3 / line-h-4; 
 }
 
 button {
@@ -17,6 +29,10 @@ button {
   cursor: pointer; 
   padding: 10px 16px; 
   margin-right: 10px;
+}
+
+p {
+  color: white;
 }
 
 nav ul {
@@ -40,26 +56,16 @@ nav a:hover {
 	color: #DAA520;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 8.3vh;
+.container {
+  /* Definition of the parent 12 columns grid */
+    height:100vh;  /* 100% of the viewport */
+    display: grid;
+    grid-template-rows: [line-h-1] 70px [line-h-2] 1fr 1fr 1fr 1fr 1fr [line-h-4] 100px [line-h-5]; 
+    grid-template-columns: [col-start] repeat(12, 1fr) [col-end];
 }
 
-.col {
-  flex-basis: 8.33vw;
-  height: 100%;
-  box-sizing: border-box;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
- /* For mobile phones: */
- [class*="col-"] {
+/* For mobile phones: */
+[class*="col-"] {
   width: 100%;
 }
 
