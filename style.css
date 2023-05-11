@@ -17,6 +17,14 @@ footer {
 footer p {
     margin: 0;
 }
+
+.container {
+  /* Definition of the parent 12 columns grid */
+    height:100vh;  /* 100% of the viewport */
+    display: grid;
+    grid-template-rows: [line-h-1] 150px [line-h-2] 1fr 1fr 1fr 1fr 1fr [line-h-4] 100px [line-h-5]; 
+    grid-template-columns: [col-start] repeat(12, 1fr) [col-end];
+    }
     
 .row {
         display: flex;
