@@ -24,18 +24,62 @@ header nav {
   align-items: center;
 }
 
+header nav p {
+  margin-left: 5%;
+}
+
 header nav ul {
   display: flex;
   gap: 1.5rem;
   justify-content: end;
   list-style: none;
   display: right;
+  margin-right: 10%;
 }
 
 footer { 
   background:#81234b;
   grid-column: col-start / col-end; 
   grid-row: line-h-3 / line-h-4; 
+}
+
+footer nav {
+  font-family: Arial;
+  font-style: normal;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+
+  display: flex; /* parent is set to flex */
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav p {
+  margin-left: 5%;
+}
+
+footer nav ul {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: end;
+  list-style: none;
+  display: right;
+  margin-right: 10%;
+}
+
+.grid-item1 {
+  background-color: red;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-row-start: line-h-2;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+img {
+  width: 100%;
 }
 
 button {
@@ -69,7 +113,7 @@ nav a:hover {
   /* Definition of the parent 12 columns grid */
     height:100vh;  /* 100% of the viewport */
     display: grid;
-    grid-template-rows: [line-h-1] 30px [line-h-2] 1fr 1fr 1fr 1fr 1fr [line-h-4] 100px [line-h-5]; 
+    grid-template-rows: [line-h-1] 35px [line-h-2] 1fr 1fr 1fr 1fr 1fr [line-h-4] 35px [line-h-5]; 
     grid-template-columns: [col-start] repeat(12, 1fr) [col-end];
 }
 
