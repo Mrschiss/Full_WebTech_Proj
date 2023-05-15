@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: Arial;
 }
 
 header { 
@@ -12,7 +13,6 @@ header {
 }
 
 header nav {
-  font-family: Arial;
   font-style: normal;
   font-size: 0.875rem;
   font-weight: 400;
@@ -40,11 +40,10 @@ header nav ul {
 footer { 
   background:#81234b;
   grid-column: col-start / col-end; 
-  grid-row: line-h-3 / line-h-4; 
+  grid-row: line-h-7 / line-h-8; 
 }
 
 footer nav {
-  font-family: Arial;
   font-style: normal;
   font-size: 0.875rem;
   font-weight: 400;
@@ -69,26 +68,171 @@ footer nav ul {
   margin-right: 10%;
 }
 
-.grid-item1 {
-  background-color: red;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+.grid-nav {
   grid-row-start: line-h-2;
+  text-align: center;
+  grid-column: 1;
+  font-size: 30px;
+}
+
+.grid-logo {
+  grid-row-start: line-h-2;
+  text-align: center;
+  grid-column: 2 / 5;
+  font-size: 30px;
+}
+
+.grid-search1 {
+  grid-row-start: line-h-2;
+  grid-column: 5;
+  text-align: center;
+  font-size: 30px;
+} 
+
+.grid-search2 {
+  grid-row-start: line-h-2;
+  grid-column: 6 / 11;
+  text-align: center;
+  font-size: 30px;
+} 
+
+.grid-bag {
+  grid-row-start: line-h-2;
+  grid-column: 11 / col-end;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-button1 {
+  grid-row-start: line-h-3;
+  grid-column: 2;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} 
+
+.grid-button2 {
+  grid-row-start: line-h-3;
+  grid-column: 4;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} 
+
+.grid-button3 {
+  grid-row-start: line-h-3;
+  grid-column: 6;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} 
+
+.grid-button4 {
+  grid-row-start: line-h-3;
+  grid-column: 8;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} 
+
+.grid-button5 {
+  grid-row-start: line-h-4;
+  grid-column: 11;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
 
-img {
-  width: 100%;
+.grid-label1 {
+  grid-row-start: line-h-4;
+  grid-column: 2;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
 }
 
-button {
-  background-color: #81234b; 
-  color: white; 
-  border: none; 
+.article1 {
+  grid-row-start: line-h-5;
+  grid-column: 2;
+  text-align: center;
+  font-weight: bold;
+  width: 180%;
+}
+
+.article2 {
+  grid-row-start: line-h-5;
+  grid-column: 5;
+  text-align: center;
+  font-weight: bold;
+  width: 180%;
+}
+
+.article3 {
+  grid-row-start: line-h-5;
+  grid-column: 8;
+  text-align: center;
+  font-weight: bold;
+  width: 180%;
+}
+
+.article4 {
+  grid-row-start: line-h-5;
+  grid-column: 11;
+  text-align: center;
+  font-weight: bold;
+  width: 180%;
+}
+
+.description1 {
+  grid-row-start: line-h-6;
+  grid-column: 2;
+  text-align: center;
+  font-weight: bold;
+  width: 180%;
+  padding-top: 0%;
+}
+
+.description2 {
+  grid-row-start: line-h-6;
+  grid-column: 5;
+  text-align: center;
+  font-weight: bold;
+  width: 180%;
+  padding-top: 0%;
+}
+
+.description3 {
+  grid-row-start: line-h-6;
+  grid-column: 8;
+  text-align: center;
+  font-weight: bold;
+  width: 180%;
+  padding-top: 0%;
+}
+
+.description4 {
+  grid-row-start: line-h-6;
+  grid-column: 11;
+  text-align: center;
+  font-weight: bold;
+  width: 180%;
+  padding-top: 0%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+button { 
+  background-color: white;
+  color: black; 
+  border: solid 1px; 
   cursor: pointer; 
-  padding: 10px 16px; 
-  margin-right: 10px;
+  width: 140%;
+  height: 20%;
+  font-weight: bold;
 }
 
 p {
@@ -113,7 +257,7 @@ nav a:hover {
   /* Definition of the parent 12 columns grid */
     height:100vh;  /* 100% of the viewport */
     display: grid;
-    grid-template-rows: [line-h-1] 35px [line-h-2] 1fr 1fr 1fr 1fr 1fr [line-h-4] 35px [line-h-5]; 
+    grid-template-rows: [line-h-1] 35px [line-h-2] 10% [line-h-3] 1fr [line-h-4] 1fr [line-h-5]  1fr [line-h-6] 1fr [line-h-7] 35px [line-h-8]; 
     grid-template-columns: [col-start] repeat(12, 1fr) [col-end];
 }
 
