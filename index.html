@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkiStuff</title>
     <link rel="stylesheet" href="style.css">
+	
+	<style>
+		.help-box {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 20px;
+		  width: 300px;
+		  border: 2px solid #ccc;
+		  padding: 20px;
+		  background-color: #f9f9f9;
+		  text-align: center;
+		  z-index: 9999;
+		}
+	  </style>
+	  
+		<style>
+		.special-offer {
+		  border: 2px solid #ccc;
+		  padding: 20px;
+		  background-color: #f9f9f9;
+		  text-align: center;
+		}
+		</style>
 </head>
 <body>
 	<div class="container">
@@ -43,6 +67,46 @@
 		<div class="description2">Skipants</div>
 		<div class="description3">Goggles</div>
 		<div class="description4">Gloves</div>
+		
+		<div class="help-box" id="help-box">
+			<h3>Do you need help?</h3>
+			<p>Please, <a href="contact.html">click here</a> to contact us.</p>
+		</div>
+
+		<script>
+			setTimeout(showHelpBox, 60000); // Show the help box after 60 seconds
+
+			function showHelpBox() {
+			  var helpBox = document.getElementById('help-box');
+			  helpBox.style.display = 'block';
+
+			  setTimeout(hideHelpBox, 60000); // Hide the help box after another 60 seconds
+			}
+
+			function hideHelpBox() {
+			  var helpBox = document.getElementById('help-box');
+			  helpBox.style.display = 'none';
+			}
+		</script>
+  
+		 <div class="special-offer">
+			<h2>Special Offer!</h2>
+			<p>Get 20% off on selected products.</p>
+			<p>Hurry, offer expires on <span id="expiration-date"></span>.</p>
+		 </div>
+
+		 <script>
+			var today = new Date();
+			var expirationDate = new Date(today);
+			expirationDate.setDate(today.getDate() + 7);
+
+		 
+			var options = { year: 'numeric', month: 'long', day: 'numeric' };
+			var formattedDate = expirationDate.toLocaleDateString(undefined, options);
+
+
+			document.getElementById('expiration-date').textContent = formattedDate;
+		 </script>
 
 		<!--I haven't touched this part yet, that's the reson why the buttons look as buggy as they are right now
 		<div style="display: flex; align-items: center; padding:50px;">
