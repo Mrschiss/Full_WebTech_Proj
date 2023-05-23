@@ -1,0 +1,1 @@
+We didn't got that far that I could entirely fix the webpage so on frontpage you have the slider and on index you have the other two worksheet 7 tasks implemented
