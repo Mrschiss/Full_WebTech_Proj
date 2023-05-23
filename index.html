@@ -6,31 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkiStuff</title>
     <link rel="stylesheet" href="style.css">
-	
-	<style>
-		.help-box {
-		  display: none;
-		  position: fixed;
-		  bottom: 20px;
-		  right: 20px;
-		  width: 300px;
-		  border: 2px solid #ccc;
-		  padding: 20px;
-		  background-color: #f9f9f9;
-		  text-align: center;
-		  z-index: 9999;
-		}
-	  </style>
-	  
-		<style>
-		.special-offer {
-		  border: 2px solid #ccc;
-		  padding: 20px;
-		  background-color: #f9f9f9;
-		  text-align: center;
-		}
-		</style>
+	<script src="script.js" async></script>
 </head>
+
 <body>
 	<div class="container">
 
@@ -73,27 +51,11 @@
 			<p>Please, <a href="contact.html">click here</a> to contact us.</p>
 		</div>
 
-		<script>
-			setTimeout(showHelpBox, 60000); // Show the help box after 60 seconds
-
-			function showHelpBox() {
-			  var helpBox = document.getElementById('help-box');
-			  helpBox.style.display = 'block';
-
-			  setTimeout(hideHelpBox, 60000); // Hide the help box after another 60 seconds
-			}
-
-			function hideHelpBox() {
-			  var helpBox = document.getElementById('help-box');
-			  helpBox.style.display = 'none';
-			}
-		</script>
-  
-		 <div class="special-offer">
+		<div class="special-offer">
 			<h2>Special Offer!</h2>
 			<p>Get 20% off on selected products.</p>
 			<p>Hurry, offer expires on <span id="expiration-date"></span>.</p>
-		 </div>
+		</div>
 
 		 <script>
 			var today = new Date();
