@@ -266,9 +266,13 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
+  grid-row-start: line-h-2;
+  grid-row-end: line-h-5;
+  grid-column-start: 2;
+  grid-column-end: 11;
 }
 
 /* Hide the images by default */
