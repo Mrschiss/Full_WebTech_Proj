@@ -272,12 +272,13 @@ p {
   grid-row-start: line-h-2;
   grid-row-end: line-h-5;
   grid-column-start: 2;
-  grid-column-end: 11;
+  grid-column-end: 12;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  max-width: 100%;
 }
 
 /* Next & previous buttons */
