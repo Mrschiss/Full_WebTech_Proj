@@ -2,14 +2,14 @@ function hideHelpBox() {
     var helpBox = document.getElementById('help-box');
     helpBox.style.visibility = "hidden";
 
-    setTimeout(showHelpBox, 60000); // Show the help box after 60 seconds
+    setTimeout(showHelpBox, 6000); // Show the help box after 60 seconds
 }
 
 function showHelpBox() {
     var helpBox = document.getElementById('help-box');
     helpBox.style.visibility = "visible";
 
-    setTimeout(hideHelpBox, 60000); // Hide the help box after another 60 seconds
+    setTimeout(hideHelpBox, 6000); // Hide the help box after another 60 seconds
 }
 
 
